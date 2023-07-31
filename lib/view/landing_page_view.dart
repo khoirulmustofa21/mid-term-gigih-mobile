@@ -87,6 +87,7 @@ class LandingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final LandingPageController landingPageController =
         Get.put(LandingPageController(), permanent: false);
+
     return SafeArea(
       child: Scaffold(
         bottomNavigationBar:
@@ -95,8 +96,8 @@ class LandingPage extends StatelessWidget {
           () => IndexedStack(
             index: landingPageController.tabIndex.value,
             children: [
-              homeview(),
-              playview(),
+              homeview(context),
+              playview(context),
               profileview(),
             ],
           ),

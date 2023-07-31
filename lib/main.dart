@@ -13,10 +13,11 @@ class MyBottomNavigationBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
           scaffoldBackgroundColor: const Color(0x0015141F),
           canvasColor: const Color(0x0015141F)),
-      home: LandingPage(),
+      home: const LandingPage(),
     );
   }
 }
