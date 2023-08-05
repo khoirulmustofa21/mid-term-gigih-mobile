@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mobile/view/widget/home_card_top.dart';
-import 'package:mobile/view/widget/home_text_top.dart';
-import 'package:mobile/view/widget/home_trending.dart';
+import 'package:mobile/view/home/widget/home_card_top.dart';
+import 'package:mobile/view/home/widget/home_text_top.dart';
+import 'package:mobile/view/home/widget/home_trending.dart';
 
 Widget homeview(context) {
   final List<String> imgList = [

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mobile/controller/landing_page_controller.dart';
-import 'package:mobile/view/home_view.dart';
-import 'package:mobile/view/play_view.dart';
-import 'package:mobile/view/profile_view.dart';
+import 'package:mobile/view/leanding/controller/landing_page_controller.dart';
+import 'package:mobile/view/home/home_view.dart';
+import 'package:mobile/view/play/play_view.dart';
+import 'package:mobile/view/profile/profile_view.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({super.key});

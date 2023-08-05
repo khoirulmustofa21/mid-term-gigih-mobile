@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mobile/controller/play_view_controller.dart';
-import 'package:mobile/view/widget/play_list.dart';
+import 'package:mobile/view/play/controller/play_view_controller.dart';
+import 'package:mobile/view/play/widget/play_list.dart';
 
 PlayViewController c = PlayViewController();
 
@@ -79,7 +79,7 @@ Widget playview(context) {
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: List.generate(
-                category.length, // Ganti dengan jumlah kategori yang diinginkan
+                category.length,
                 (index) {
                   return InkWell(
                     splashColor: Colors.transparent,
@@ -98,7 +98,7 @@ Widget playview(context) {
                               color: c.selectIndex.value == index
                                   ? const Color(0xffFF8F71)
                                   : Colors.white.withOpacity(0.7),
-                              fontSize: 20,
+                              fontSize: 16,
                               fontWeight: FontWeight.w400,
                               letterSpacing: 0.5,
                             ),

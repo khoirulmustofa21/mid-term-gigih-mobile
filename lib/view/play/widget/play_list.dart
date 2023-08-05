@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mobile/view/detail_view.dart';
+import 'package:mobile/view/detail/detail_view.dart';
 
 Widget playList(listImages) {
   return Expanded(
@@ -20,7 +20,9 @@ Widget playList(listImages) {
       itemBuilder: (BuildContext context, int index) {
         return InkWell(
           onTap: () {
-            Get.to(DetailView(img: listImages[index]));
+            Get.to(DetailView(
+              img: listImages[index],
+            ));
           },
           child: Container(
             decoration: BoxDecoration(

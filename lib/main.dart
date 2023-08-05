@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mobile/view/landing_page_view.dart';
+import 'package:mobile/view/leanding/landing_page_view.dart';
 
 void main() {
   runApp(const MyBottomNavigationBar());
